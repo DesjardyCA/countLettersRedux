@@ -7,9 +7,8 @@ function countLetters(str) {
         if (!out[text] && text !== ' ') {
             out[text] = {
                 num: 1,
-                list: []
+                list: [char]
             };
-            out[text].list.push(char);
         } else if (out[text] && text !== ' ') {
             out[text].num++;
             out[text].list.push(char);
